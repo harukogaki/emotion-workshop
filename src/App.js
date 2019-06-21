@@ -130,7 +130,6 @@ function App() {
               <ListContainer>
                 <FilterButton
                   text={'All'}
-                  buttonType={ButtonTypes.default}
                   onClick={() => setFilter(ALL_TODOS)}
                   href="#/"
                 />

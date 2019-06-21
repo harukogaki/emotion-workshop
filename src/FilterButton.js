@@ -22,6 +22,22 @@ const ButtonContainer = styled.a`
   font-weight: 600;
   ${props => {
     /* based on the button type, change the backgroundColor and text color  */
+    let { buttonType } = props;
+
+    switch (buttonType) {
+      case ButtonTypes.primary: return {
+        backgroundColor: 'cornflowerblue',
+        color: 'white'
+      }
+      case ButtonTypes.secondary: return {
+        backgroundColor: 'limegreen',
+        color: 'white'
+      }
+      default: return {
+        backgroundColor: 'white',
+        color: 'grey'
+      }
+    }
   }}
 `
 function FilterButton({ buttonType, onClick, href, text }) {
