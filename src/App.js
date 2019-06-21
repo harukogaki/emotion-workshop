@@ -86,7 +86,7 @@ function App() {
       <section className="todoapp">
         <div>
           <header className="header">
-            <Header></Header>
+            <Header color='limegreen'></Header>
             <NewTodo onInsert={onInsert} />
           </header>
 
