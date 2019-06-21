@@ -12,9 +12,21 @@ import React from 'react'
 import styled from '@emotion/styled'
 
 // create style component here and replace the h1 with your styled component
+const StyledHeader = styled.h1`
+  position: absolute;
+  top: -155px;
+  width: 100%;
+  font-size: 100px;
+  font-weight: 100;
+  text-align: center;
+  color:grey;
+  -webkit-text-rendering: optimizeLegibility;
+  -moz-text-rendering: optimizeLegibility;
+  text-rendering: optimizeLegibility;
+`;
 
 function Header() {
-    return ( <h1>Todos</h1>)
+    return ( <StyledHeader>Todos</StyledHeader>)
   }
 
 export default Header

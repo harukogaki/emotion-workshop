@@ -5,6 +5,7 @@ import './App.css'
 import { ALL_TODOS, ACTIVE_TODOS, COMPLETED_TODOS } from './constants'
 import NewTodo from './NewTodo'
 import TodoItem from './TodoItem'
+import Header from './Header';
 
 const initialTodos = [
   {
@@ -85,7 +86,7 @@ function App() {
       <section className="todoapp">
         <div>
           <header className="header">
-            <h1>todos</h1>
+            <Header>todos</Header>
             <NewTodo onInsert={onInsert} />
           </header>
 
